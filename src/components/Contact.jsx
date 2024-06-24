@@ -25,7 +25,7 @@ function Contact() {
     console.log("form values:", values);
   };
   return (
-    <div className="flex flex-col items-center justify-center mt-10 bg-slate-500 mx-80 rounded-xl p-10">
+    <div className="flex flex-col items-center justify-center mt-10 bg-slate-500 md:mx-80 mx-100 rounded-xl p-10">
       <p className="mb-6">Contact Us</p>
       <Form layout="vertical" onFinish={onFinish}>
         <Form.Item

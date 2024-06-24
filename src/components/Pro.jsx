@@ -18,17 +18,16 @@ function Pro() {
     <div className="flex flex-col items-center gap-10 justify-center mt-10">
       <h1>Projects</h1>
 
-      <ul className="grid grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-3  gap-10">
         {images.map((pictures) => (
-          <li key={pictures.id} className="w-[300px] h-[300px]">
-            <img
-              src={pictures.image}
-              alt=""
-              className=" cursor-pointer w-full h-full object-cover rounded-lg"
-            />
-          </li>
+          <img
+            src={pictures.image}
+            key={pictures.id}
+            alt=""
+            className=" cursor-pointer w-[300px] h-[300px] object-cover rounded-lg"
+          />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
